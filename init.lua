@@ -173,6 +173,11 @@ vim.o.confirm = true
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+vim.keymap.set('n', '<C-s>', '<cmd>w<wr><esc>')
+vim.keymap.set('i', '<C-s>', '<cmd>w<wr><esc>')
+vim.keymap.set('x', '<C-s>', '<cmd>w<wr><esc>')
+vim.keymap.set('s', '<C-s>', '<cmd>w<wr><esc>')
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
